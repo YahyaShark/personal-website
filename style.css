@@ -15,6 +15,29 @@ body {
     flex-direction: column;
 }
 
+.social-icons {
+    position: auto;
+    bottom: 20px; 
+    right: 20px; 
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    font-size: 20px;
+    text-decoration: none;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.instagram-icon { color: #000000; }
+.discord-icon { color: #000000; }
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+
 /* Untuk layar kecil, agar background tidak terpotong saat scroll */
 @media (max-width: 768px) {
     body {
@@ -169,5 +192,8 @@ img.profile-picture {
     img.profile-picture {
         width: 120px;
         height: 120px;
+    }
+    .social-icons a {
+        font-size: 20px; 
     }
 }
